@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Happy Places</string>
+    <string name="preference_fact_type_key" />
+    <string name="welcome_message_authed" />
+    <string name="logout_button_text" />
+    <string name="login_button_text" />
+    <string name="login_prompt" />
+    <string name="login_btn" />
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">YOUR_APP_ID</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fbYOUR_APP_ID</string>
 </resources>

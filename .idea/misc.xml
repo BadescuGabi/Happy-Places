@@ -5,8 +5,11 @@
       <map>
         <entry key="..\:/Users/Gabri/Desktop/facultate/an3_s2/android/HappyPlaces/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2265" />
         <entry key="..\:/Users/Gabri/Desktop/facultate/an3_s2/android/HappyPlaces/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
-        <entry key="..\:/Users/Gabri/Desktop/facultate/an3_s2/android/HappyPlaces/app/src/main/res/layout/activity_main.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/Gabri/Desktop/facultate/an3_s2/android/HappyPlaces/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Gabri/Desktop/facultate/an3_s2/android/HappyPlaces/app/src/main/res/layout/activity_splash_screen.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Gabri/Desktop/facultate/an3_s2/android/HappyPlaces/app/src/main/res/layout/fragment_login.xml" value="0.2" />
+        <entry key="..\:/Users/Gabri/Desktop/facultate/an3_s2/android/HappyPlaces/app/src/main/res/layout/fragment_main.xml" value="0.152" />
+        <entry key="..\:/Users/Gabri/Desktop/facultate/an3_s2/android/HappyPlaces/app/src/main/res/xml/settings.xml" value="0.11302083333333333" />
       </map>
     </option>
   </component>
