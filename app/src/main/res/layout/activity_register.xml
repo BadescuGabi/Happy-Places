@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
 
     <FrameLayout
         android:id="@+id/wrapper_logo"
@@ -14,12 +15,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
-        android:id="@+id/image_logo"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/logo1" />
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/logo1" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/text_logo"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            />-->
     </FrameLayout>
 
     <TextView
@@ -28,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
         android:fontFamily="sans-serif-black"
-        android:text="Sign in to your account"
+        android:text="Create new account"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,30 +95,61 @@
             android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
-
-<!--            <Button-->
-<!--                android:id="@+id/btn_signup"-->
-<!--                style="@style/Button"-->
-<!--                android:layout_marginTop="@dimen/dp15"-->
-<!--                android:backgroundTint="@color/bg_screen2"-->
-<!--                android:minWidth="@dimen/dp120"-->
-<!--                android:text="@string/signup"-->
-<!--                android:textAllCaps="false"-->
-<!--                android:textStyle="bold" />-->
-
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/wrapper_confirm_password"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/Button"
-        android:layout_marginTop="@dimen/dp15"
-        android:gravity="center"
-        android:backgroundTint="@color/bg_screen2"
-        android:text="@string/login"
-        android:textAllCaps="false"
-        android:textStyle="bold"
+        android:layout_marginEnd="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginStart="@dimen/dp16"
+        android:textColorHint="@color/white"
+        android:theme="@style/EditTextWrapper"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/wrapper_password"/>
+        app:layout_constraintTop_toBottomOf="@id/wrapper_password">
 
+        <EditText
+            android:id="@+id/edt_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_lock"
+            android:drawablePadding="@dimen/dp16"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textAppearance="@style/TextView_Regular"
+            android:textColor="@color/white_par"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register" >
+
+        <TextView
+            android:id="@+id/have_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/have_account"
+            android:layout_marginTop="@dimen/dp20"
+            app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+
+        <Button
+            android:id="@+id/edt_to_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/login"
+            android:layout_marginTop="@dimen/dp20"/>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

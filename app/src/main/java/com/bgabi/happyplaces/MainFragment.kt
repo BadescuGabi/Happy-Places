@@ -53,8 +53,8 @@ class MainFragment : Fragment() {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_main, container, false)
 
         // TODO Remove the two lines below once observeAuthenticationState is implemented.
-        binding.welcomeText.text = viewModel.getFactToDisplay(requireContext())
-        binding.authButton.text = getString(R.string.login_btn)
+//        binding.welcomeText.text = viewModel.getFactToDisplay(requireContext())
+//        binding.authButton.text = getString(R.string.login_btn)
 
         return binding.root
     }
@@ -62,8 +62,7 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         observeAuthenticationState()
-
-        binding.authButton.setOnClickListener { launchSignInFlow() }
+        binding.btnLogin.setOnClickListener { launchSignInFlow() }
     }
 
     @Deprecated("Deprecated in Java")
@@ -97,18 +96,18 @@ class MainFragment : Fragment() {
         viewModel.authenticationState.observe(viewLifecycleOwner, Observer { authenticationState ->
             when (authenticationState) {
                 LoginViewModel.AuthenticationState.AUTHENTICATED -> {
-                    binding.welcomeText.text = getFactWithPersonalization(factToDisplay)
+//                    binding.welcomeText.text = getFactWithPersonalization(factToDisplay)
 
-                    binding.authButton.text = getString(R.string.logout_button_text)
-                    binding.authButton.setOnClickListener {
+//                    binding.authButton.text = getString(R.string.logout_button_text)
+                    binding.btnLogin.setOnClickListener {
                         AuthUI.getInstance().signOut(requireContext())
                     }
                 }
                 else -> {
-                    binding.welcomeText.text = factToDisplay
-
-                    binding.authButton.text = getString(R.string.login_button_text)
-                    binding.authButton.setOnClickListener {
+//                    binding.welcomeText.text = factToDisplay
+//
+//                    binding.authButton.text = getString(R.string.login_button_text)
+                    binding.btnLogin.setOnClickListener {
                         launchSignInFlow()
                     }
                 }
