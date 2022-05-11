@@ -69,10 +69,10 @@ class MainActivity : AppCompatActivity(){
         val user = Firebase.auth.currentUser
         val userTextView = findViewById<TextView>(R.id.hello_username)
         if (user != null) {
-            val text: String = "Hello, " + user.email + "!"
+            val text: String = "Welcome, " + user.email + "!"
             userTextView.text = text
         } else {
-            val text: String = "Hello, world!"
+            val text: String = "Welcome to Happy Places App!"
             userTextView.text = text
         }
     }
