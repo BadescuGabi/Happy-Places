@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <array name="fact_type">
-        <item>@string/fact_type_android</item>
-        <item>@string/fact_type_california</item>
-    </array>
-    <string name="fact_type_android" />
-    <string name="fact_type_california" />
+    <string-array name="reply_entries">reply_entities</string-array>
+    <string-array name="reply_values">reply_values</string-array>
 </resources>

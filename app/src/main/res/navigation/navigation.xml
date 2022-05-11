@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.bgabi.happyplaces.TitleFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_title" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.bgabi.happyplaces.AboutFragment"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.bgabi.happyplaces.ContactFragment"
+        android:label="@string/contact"
+        tools:layout="@layout/fragment_contact" />
+
+    <activity
+        android:id="@+id/redirect_sign_in"
+        android:name="com.bgabi.happyplaces.auth.SignInActivity"
+        android:icon="@drawable/log_in_ic"
+        android:label="@string/sign_in" />
+    <activity
+        android:id="@+id/log_out_button"
+        android:name="com.bgabi.happyplaces.MainActivity"
+        android:icon="@drawable/log_out_ic"
+        android:label="@string/log_out" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/settingsFragment"-->
+<!--        android:name="com.bgabi.happyplaces.SettingsFragment"-->
+<!--        android:label="@string/settings"-->
+<!--        tools:layout="@layout/fragment_settings" />-->
+</navigation>

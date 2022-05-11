@@ -1,10 +1,10 @@
-//dependencyResolutionManagement {
-//    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
-//    repositories {
-//        google()
-//        mavenCentral()
-//        maven { url 'https://jitpack.io' }
-//    }
-//}
-rootProject.name = "Happy Places"
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "Happy Places App"
 include ':app'
